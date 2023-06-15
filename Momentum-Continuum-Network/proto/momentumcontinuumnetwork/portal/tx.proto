@@ -1,0 +1,7 @@
+syntax = "proto3";
+package momentumcontinuumnetwork.portal;
+
+option go_package = "Momentum-Continuum-Network/x/portal/types";
+
+// Msg defines the Msg service.
+service Msg {}

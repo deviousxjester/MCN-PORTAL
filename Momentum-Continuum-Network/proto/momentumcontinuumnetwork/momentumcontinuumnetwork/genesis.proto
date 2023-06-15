@@ -1,0 +1,12 @@
+syntax = "proto3";
+package momentumcontinuumnetwork.momentumcontinuumnetwork;
+
+import "gogoproto/gogo.proto";
+import "momentumcontinuumnetwork/momentumcontinuumnetwork/params.proto";
+
+option go_package = "Momentum-Continuum-Network/x/momentumcontinuumnetwork/types";
+
+// GenesisState defines the momentumcontinuumnetwork module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

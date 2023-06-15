@@ -1,0 +1,12 @@
+syntax = "proto3";
+package momentumcontinuumnetwork.portal;
+
+import "gogoproto/gogo.proto";
+import "momentumcontinuumnetwork/portal/params.proto";
+
+option go_package = "Momentum-Continuum-Network/x/portal/types";
+
+// GenesisState defines the portal module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
